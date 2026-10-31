@@ -1,0 +1,9 @@
+{
+  "cli": { "version": ">= 12.0.0", "appVersionSource": "local" },
+  "build": {
+    "production": { "channel": "production", "ios": { "resourceClass": "m-medium" } }
+  },
+  "submit": {
+    "production": { "ios": { "appleTeamId": "ZYXWV98765", "ascAppId": "6740012345" } }
+  }
+}

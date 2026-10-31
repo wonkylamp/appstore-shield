@@ -1,0 +1,26 @@
+From: Apple Developer Program <developer@apple.com>
+Subject: Notice of Pending Termination - Apple Developer Program
+Date: Fri, 30 Oct 2026 16:02:44 -0700
+
+Dear Developer,
+
+We are writing to inform you that your Apple Developer Program membership is pending termination.
+
+Team ID: ABCDE12345
+
+Your account has been reviewed and was found to be in violation of the Apple Developer Program License Agreement, Section 3.2(f), which prohibits engaging in any misleading, fraudulent, improper, unlawful or dishonest act relating to the Program.
+
+This determination is based on evidence of a pattern of manipulative or misleading behavior associated with your account. Such behavior may include, but is not limited to:
+
+- Submitting apps that conceal, misrepresent or change features after review
+- Misleading customers or App Review about your apps' content, functionality or pricing
+- Manipulating App Store ratings, reviews, rankings or search results
+- Submitting misleading or inaccurate information in App Store Connect or in correspondence with Apple
+- Repeatedly submitting apps that do not comply with the App Review Guidelines
+
+If you believe this determination was made in error, you may submit an appeal to the App Review Board within 30 days of the date of this notice. Please include any information that may be relevant to the review of your account.
+
+If we do not receive an appeal within this time, your membership will be terminated and your apps will be removed from the App Store.
+
+Regards,
+Apple Developer Program

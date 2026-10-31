@@ -1,0 +1,43 @@
+From: App Store Connect <no_reply@email.apple.com>
+Subject: There's an issue with your submission
+Date: Thu, 17 Sep 2026 09:05:51 -0700
+
+Hello,
+
+We reviewed your app submission and found an issue that needs your attention. Visit App Store Connect to read the full message from App Review.
+
+App Name: Luna - AI Companion
+Submission ID: 9b27d4e0-1f6a-4c83-b5d9-72e0a4c6f193
+Version reviewed: Version 1.3 (42)
+Review date: September 17, 2026
+Review device: iPad Air (5th generation), iPhone 15
+
+Guideline 1.2 - Safety - User-Generated Content
+
+Issue Description
+
+Your app enables the display of AI-generated content but does not have the required precautions in place. Apps that let users create content with generative AI need all of the following:
+
+- A method for filtering objectionable material from being generated or posted to the app
+- A mechanism to report offensive content and timely responses to concerns
+- The ability to block abusive users
+- Published contact information so users can easily reach you
+
+We were able to generate sexually suggestive images of the AI character by entering a free-text description, even though the outfit options cited in our previous review are no longer shown.
+
+Next Steps
+
+Revise your app to implement all of the precautions above, including filtering prompts and generated images, and resubmit for review. When you resubmit, describe in the App Review notes, with specificity, what changed and how the safeguards work.
+
+Resources
+
+- Review the App Review Guidelines, section 1.2.
+
+Support
+
+- Reply to this message in App Store Connect if you need clarification.
+- Request an App Review appointment to discuss this review with a member of the team.
+- Ask questions on the Apple Developer Forums.
+
+Best regards,
+App Review

@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Inkwell",
+    "slug": "inkwell-journal",
+    "version": "2.1.0",
+    "orientation": "portrait",
+    "runtimeVersion": { "policy": "fingerprint" },
+    "updates": {
+      "url": "https://u.expo.dev/9a8b7c6d-5e4f-4a3b-8c2d-1e0f9a8b7c6d",
+      "checkAutomatically": "NEVER"
+    },
+    "ios": {
+      "bundleIdentifier": "app.inkwell.journal",
+      "buildNumber": "88",
+      "appleTeamId": "LMNOP13579",
+      "usesAppleSignIn": true,
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyAccessedAPITypes": [
+          { "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults", "NSPrivacyAccessedAPITypeReasons": ["CA92.1"] },
+          { "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryFileTimestamp", "NSPrivacyAccessedAPITypeReasons": ["C617.1"] },
+          { "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategorySystemBootTime", "NSPrivacyAccessedAPITypeReasons": ["35F9.1"] },
+          { "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryDiskSpace", "NSPrivacyAccessedAPITypeReasons": ["E174.1"] }
+        ]
+      }
+    },
+    "plugins": ["@react-native-firebase/app", "expo-apple-authentication", "expo-secure-store"],
+    "extra": {
+      "eas": { "projectId": "9a8b7c6d-5e4f-4a3b-8c2d-1e0f9a8b7c6d" }
+    }
+  }
+}

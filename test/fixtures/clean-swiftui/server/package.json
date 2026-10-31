@@ -1,0 +1,12 @@
+{
+  "name": "quill-api",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "hono": "^4.6.3",
+    "jose": "^5.9.3",
+    "openai": "^4.67.0"
+  }
+}

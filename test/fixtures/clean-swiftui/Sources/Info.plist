@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>Quill</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Quill turns your dictation into text so you can draft a note by speaking.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Quill uses the microphone only while you hold the dictation button.</string>
+	<key>QuillAPIBaseURL</key>
+	<string>https://api.quillwriter.app</string>
+</dict>
+</plist>

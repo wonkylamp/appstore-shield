@@ -29,7 +29,7 @@ import {
 import {
   CHECK_IDS
 } from "./chunks/chunk-NJWBMBWQ.js";
-import "./chunks/chunk-XC6NGD3F.js";
+import "./chunks/chunk-CQRTQUVP.js";
 
 // src/cli.ts
 import { execFileSync, spawn } from "node:child_process";
@@ -39,12 +39,12 @@ import { homedir } from "node:os";
 import path from "node:path";
 import { createInterface } from "node:readline/promises";
 var lazy = {
-  finding: () => import("./chunks/finding-UBQ5ZU5M.js"),
-  format: () => import("./chunks/format-L7JDI4WW.js"),
-  importer: () => import("./chunks/import-CT33RXK2.js"),
-  store: () => import("./chunks/store-DSLNVEOQ.js"),
-  triggers: () => import("./chunks/triggers-WC5SZ3DT.js"),
-  preflight: () => import("./chunks/preflight-UVP2IAUV.js")
+  finding: () => import("./chunks/finding-XGSKMICU.js"),
+  format: () => import("./chunks/format-UWG2JSWY.js"),
+  importer: () => import("./chunks/import-VQF2UBFZ.js"),
+  store: () => import("./chunks/store-O5PI7QPL.js"),
+  triggers: () => import("./chunks/triggers-LU77742E.js"),
+  preflight: () => import("./chunks/preflight-VZ4UFB2X.js")
 };
 var SPECS = {
   scan: { values: ["project", "checks", "paths"], bools: ["include-tests", "full", "json", "force"], positional: "project" },
@@ -598,9 +598,9 @@ async function cmdLint(a) {
   if (!text.trim()) throw new UsageError(`${file === "-" ? "stdin" : file} is empty; there is nothing to lint.`);
   const rejection = a.flags.get("rejection");
   const factIds = list(a.flags.get("fact-ids"));
-  const { createServer } = await import("./chunks/server-OPBAPKTX.js");
-  const { Client } = await import("./chunks/client-NVHKDDHO.js");
-  const { InMemoryTransport } = await import("./chunks/inMemory-J2WBAI6G.js");
+  const { createServer } = await import("./chunks/server-2J4E6ZXJ.js");
+  const { Client } = await import("./chunks/client-DEQZFKK6.js");
+  const { InMemoryTransport } = await import("./chunks/inMemory-NNUC73BG.js");
   const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
   const server = createServer();
   await server.connect(serverSide);
@@ -913,7 +913,7 @@ ${HELP.main}
     const a = parseArgs(cmd, rest);
     switch (cmd) {
       case "mcp": {
-        const { startStdioServer } = await import("./chunks/server-OPBAPKTX.js");
+        const { startStdioServer } = await import("./chunks/server-2J4E6ZXJ.js");
         await startStdioServer();
         return -1;
       }

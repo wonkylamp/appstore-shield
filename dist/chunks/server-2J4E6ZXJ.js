@@ -43,7 +43,7 @@ import {
   safeParse,
   safeParseAsync,
   toJsonSchemaCompat
-} from "./chunk-7662AWB6.js";
+} from "./chunk-R7TSWG37.js";
 import {
   VERSION
 } from "./chunk-J73L7BNZ.js";
@@ -51,7 +51,7 @@ import {
   commitImport,
   importAppleData,
   isFutureDated
-} from "./chunk-RJEZYKMP.js";
+} from "./chunk-DELRTNY6.js";
 import "./chunk-NOEU6W5P.js";
 import {
   CHECKS,
@@ -74,7 +74,7 @@ import {
   validateSpec,
   verifyRemediation,
   vetClientPath
-} from "./chunk-6A75CBNF.js";
+} from "./chunk-PIOM4UED.js";
 import {
   CHECK_IDS
 } from "./chunk-NJWBMBWQ.js";
@@ -95,7 +95,7 @@ import {
   reviewSubmissions,
   scanSummary,
   triggerChecklist
-} from "./chunk-SJOQQJYI.js";
+} from "./chunk-L5NUVNOO.js";
 import {
   HUMAN_ONLY_EVENTS,
   HumanOnlyEventError,
@@ -105,7 +105,7 @@ import {
   locateLedger,
   probeConfirmation,
   tierRank
-} from "./chunk-KHNZSQW4.js";
+} from "./chunk-XY3GP4WK.js";
 import {
   ZodOptional,
   _enum,
@@ -116,8 +116,8 @@ import {
   record,
   string,
   unknown
-} from "./chunk-TGZWIHKL.js";
-import "./chunk-XC6NGD3F.js";
+} from "./chunk-UQEVXUZ2.js";
+import "./chunk-CQRTQUVP.js";
 
 // src/server.ts
 import { execFile } from "node:child_process";
@@ -712,7 +712,7 @@ var Server = class extends Protocol {
 };
 
 // node_modules/@modelcontextprotocol/sdk/dist/esm/server/completable.js
-var COMPLETABLE_SYMBOL = Symbol.for("mcp.completable");
+var COMPLETABLE_SYMBOL = /* @__PURE__ */ Symbol.for("mcp.completable");
 function isCompletable(schema) {
   return !!schema && typeof schema === "object" && COMPLETABLE_SYMBOL in schema;
 }

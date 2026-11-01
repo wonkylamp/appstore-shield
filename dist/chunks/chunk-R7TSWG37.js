@@ -32,11 +32,11 @@ import {
   toJSONSchema,
   union,
   unknown
-} from "./chunk-TGZWIHKL.js";
+} from "./chunk-UQEVXUZ2.js";
 import {
   __commonJS,
   __toESM
-} from "./chunk-XC6NGD3F.js";
+} from "./chunk-CQRTQUVP.js";
 
 // node_modules/ajv/dist/compile/codegen/code.js
 var require_code = __commonJS({
@@ -10987,7 +10987,6 @@ ZodNaN.create = (params) => {
     ...processCreateParams(params)
   });
 };
-var BRAND = Symbol("zod_brand");
 var ZodBranded = class extends ZodType {
   _parse(input) {
     const { ctx } = this._processInputParams(input);
@@ -12919,7 +12918,7 @@ function isTerminal(status) {
 }
 
 // node_modules/zod-to-json-schema/dist/esm/Options.js
-var ignoreOverride = Symbol("Let zodToJsonSchema decide on which parser to use");
+var ignoreOverride = /* @__PURE__ */ Symbol("Let zodToJsonSchema decide on which parser to use");
 var defaultOptions = {
   name: void 0,
   $refStrategy: "root",

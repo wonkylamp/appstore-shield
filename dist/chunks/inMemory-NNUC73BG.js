@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { createRequire as __shieldCreateRequire } from "node:module";
 const require = __shieldCreateRequire(import.meta.url);
-import "./chunk-XC6NGD3F.js";
+import "./chunk-CQRTQUVP.js";
 
 // node_modules/@modelcontextprotocol/sdk/dist/esm/inMemory.js
 var InMemoryTransport = class _InMemoryTransport {

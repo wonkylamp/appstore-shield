@@ -3,7 +3,7 @@ import { createRequire as __shieldCreateRequire } from "node:module";
 const require = __shieldCreateRequire(import.meta.url);
 import {
   external_exports
-} from "./chunk-TGZWIHKL.js";
+} from "./chunk-UQEVXUZ2.js";
 
 // src/ledger/store.ts
 import { execFile } from "node:child_process";

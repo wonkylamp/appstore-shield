@@ -23,7 +23,7 @@ import {
   stableHash,
   toolRef,
   triggerChecklist
-} from "./chunk-SJOQQJYI.js";
+} from "./chunk-L5NUVNOO.js";
 import {
   MetadataSnapshot,
   RemoteControl,
@@ -34,7 +34,7 @@ import {
   locateLedger,
   probeConfirmation,
   readLedger
-} from "./chunk-KHNZSQW4.js";
+} from "./chunk-XY3GP4WK.js";
 
 // src/preflight.ts
 import { execFile as execFile3 } from "node:child_process";
@@ -283,7 +283,7 @@ var MAX_GITIGNORE_LINES = 5e3;
 var MAX_GITIGNORE_RULES = 1e3;
 var MAX_GITIGNORE_PATTERN = 255;
 var GITIGNORE_STEP_BUDGET = 1e8;
-var BUDGET_SPENT = Symbol("gitignore budget spent");
+var BUDGET_SPENT = /* @__PURE__ */ Symbol("gitignore budget spent");
 var MAX_GITIGNORE_BYTES = 1024 * 1024;
 async function readGitignore(file2) {
   try {
@@ -1926,7 +1926,7 @@ function releaseValue(expr) {
   let i = 0;
   const peek = () => toks[i];
   const isOp = (v) => peek()?.t === "op" && peek().v === v;
-  const fail = Symbol("fail");
+  const fail = /* @__PURE__ */ Symbol("fail");
   const parseTernary = () => {
     const c = parseOr();
     if (!isOp("?")) return c;

@@ -11,7 +11,7 @@ import {
   riskRank,
   sortFindings
 } from "./chunk-JMGZ43QQ.js";
-import "./chunk-XC6NGD3F.js";
+import "./chunk-CQRTQUVP.js";
 export {
   SEVERITY_ORDER,
   clip,

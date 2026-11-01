@@ -126,7 +126,7 @@ export const PROVIDERS: ProviderRule[] = [
     kind: "cloud",
     media: ["text", "image", "audio"],
     sdk: /["']@huggingface\/inference["']/,
-    hosts: /\b(api-inference\.huggingface\.co|router\.huggingface\.co)\b|(?<=(?<![\w-])[\w-]{1,100})\.(endpoints\.huggingface\.cloud|hf\.space)\b/,
+    hosts: /\b(api-inference\.huggingface\.co|router\.huggingface\.co)\b|(?<![\w-])[\w-]{1,100}\.(endpoints\.huggingface\.cloud|hf\.space)\b/,
   },
   {
     id: "runway",
@@ -189,7 +189,7 @@ export const PROVIDERS: ProviderRule[] = [
     name: "Core ML (on-device)",
     kind: "on-device",
     media: [],
-    sdk: /((?<=^[ \t]{0,64})import\s+CoreML\b|(?<=(?<![\w-])[\w-]{1,200})\.ml(model|modelc|package)\b|\bMLModel\s*\(\s*contentsOf|\bMLModelConfiguration\s*\()/m,
+    sdk: /((?<=^[ \t]{0,64})import\s+CoreML\b|(?<![\w-])[\w-]{1,200}\.ml(model|modelc|package)\b|\bMLModel\s*\(\s*contentsOf|\bMLModelConfiguration\s*\()/m,
   },
   {
     id: "mlx",
@@ -203,7 +203,7 @@ export const PROVIDERS: ProviderRule[] = [
     name: "llama.cpp (on-device)",
     kind: "on-device",
     media: ["text"],
-    sdk: /((?<=^[ \t]{0,64})import\s+(?:llama|llmfarm_core|SwiftLlama)\b|\bllama_(init_from_file|load_model_from_file|model_load_from_file|new_context_with_model|init_from_model)\b|\bLlamaContext\b|["']llama\.rn["']|(ggerganov|ggml-org)\/llama\.cpp|(?<=(?<![\w.-])[\w.-]{1,200})\.gguf\b)/m,
+    sdk: /((?<=^[ \t]{0,64})import\s+(?:llama|llmfarm_core|SwiftLlama)\b|\bllama_(init_from_file|load_model_from_file|model_load_from_file|new_context_with_model|init_from_model)\b|\bLlamaContext\b|["']llama\.rn["']|(ggerganov|ggml-org)\/llama\.cpp|(?<![\w.-])[\w.-]{1,200}\.gguf\b)/m,
   },
   {
     id: "foundationmodels",

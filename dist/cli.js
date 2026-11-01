@@ -44,7 +44,7 @@ var lazy = {
   importer: () => import("./chunks/import-VQF2UBFZ.js"),
   store: () => import("./chunks/store-O5PI7QPL.js"),
   triggers: () => import("./chunks/triggers-LU77742E.js"),
-  preflight: () => import("./chunks/preflight-IFGPH2UN.js")
+  preflight: () => import("./chunks/preflight-C7X7CDT7.js")
 };
 var SPECS = {
   scan: { values: ["project", "checks", "paths"], bools: ["include-tests", "full", "json", "force"], positional: "project" },
@@ -598,7 +598,7 @@ async function cmdLint(a) {
   if (!text.trim()) throw new UsageError(`${file === "-" ? "stdin" : file} is empty; there is nothing to lint.`);
   const rejection = a.flags.get("rejection");
   const factIds = list(a.flags.get("fact-ids"));
-  const { createServer } = await import("./chunks/server-37DCOMSW.js");
+  const { createServer } = await import("./chunks/server-6RN7TH4P.js");
   const { Client } = await import("./chunks/client-DEQZFKK6.js");
   const { InMemoryTransport } = await import("./chunks/inMemory-NNUC73BG.js");
   const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
@@ -913,7 +913,7 @@ ${HELP.main}
     const a = parseArgs(cmd, rest);
     switch (cmd) {
       case "mcp": {
-        const { startStdioServer } = await import("./chunks/server-37DCOMSW.js");
+        const { startStdioServer } = await import("./chunks/server-6RN7TH4P.js");
         await startStdioServer();
         return -1;
       }

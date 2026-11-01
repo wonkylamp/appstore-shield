@@ -1,0 +1,35 @@
+{
+  "description": "Holds submit-for-review commands, App Store Connect MCP submit tools and over-the-air publishes (eas update, CodePush, Shorebird) while the appstore-shield gate says HOLD, asks on WARN and before any production OTA publish, denies agent attempts to run the human-only attest/ack commands, to run the CLI detached or with a cleared environment, or to write the review ledger, and asks before edits to .appstore-shield settings. A guardrail for a cooperative agent, not a sandbox (see SECURITY.md).",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Monitor|Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/dist/cli.js",
+              "hook"
+            ],
+            "timeout": 30
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__.*([Ss]ubmi(t|ssion)|SUBMI(T|SSION)).*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/dist/cli.js",
+              "hook"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

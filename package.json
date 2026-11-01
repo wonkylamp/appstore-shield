@@ -1,0 +1,67 @@
+{
+  "name": "appstore-shield",
+  "version": "0.1.1",
+  "description": "Local, offline App Review compliance helper for iOS, SwiftUI and React Native/Expo apps: a CLI, MCP server and Claude Code plugin that scans for hidden or remotely switchable features and AI/UGC safety gaps, gates submit-for-review, and keeps an honest review record. Findings are leads, not proof; no guarantee of approval or against account termination. Not affiliated with or endorsed by Apple.",
+  "keywords": [
+    "app-store",
+    "app-review",
+    "app-store-review",
+    "ios",
+    "swiftui",
+    "react-native",
+    "expo",
+    "fastlane",
+    "eas",
+    "compliance",
+    "rejection",
+    "review-notes",
+    "dpla",
+    "claude-code",
+    "claude-code-plugin",
+    "mcp",
+    "mcp-server",
+    "cli"
+  ],
+  "homepage": "https://github.com/wonkylamp/appstore-shield#readme",
+  "bugs": {
+    "url": "https://github.com/wonkylamp/appstore-shield/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonkylamp/appstore-shield.git"
+  },
+  "license": "MIT",
+  "author": "wonkylamp",
+  "type": "module",
+  "bin": {
+    "appstore-shield": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "hooks",
+    ".claude-plugin",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "check:dist": "node scripts/check-dist.mjs",
+    "check:owner": "node scripts/owner.mjs check",
+    "prepublishOnly": "npm run check:owner && npm run typecheck && npm test && npm run build",
+    "mcp": "node dist/cli.js mcp"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@types/node": "^22.18.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12",
+    "zod": "^4.6.7"
+  }
+}

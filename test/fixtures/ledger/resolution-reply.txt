@@ -1,0 +1,23 @@
+App Store Connect > Luna - AI Companion > App Review > Messages
+Submission ID: 9b27d4e0-1f6a-4c83-b5d9-72e0a4c6f193
+Version 1.3 (42)
+
+From Apple
+September 21, 2026 at 11:18 AM
+
+Hello,
+
+Thank you for your reply. We understand the outfit picker has been removed and that the app now applies a keyword filter to prompts.
+
+However, upon re-review we still found that the app generates sexually suggestive images of the AI character from free-text descriptions that do not contain any of the filtered keywords. In addition, we were not able to locate a way to report a generated image or to block a user from within the app.
+
+Please note that filtering only the prompt text may not be sufficient for an AI image generator. Consider whether the generated output is also checked before it is shown.
+
+Guideline 1.2 - Safety - User-Generated Content
+
+Once you have addressed these issues, please resubmit your app and include specific details in the App Review notes about what has changed.
+
+If you would like to discuss this further, you can request an App Review appointment.
+
+Best regards,
+App Review

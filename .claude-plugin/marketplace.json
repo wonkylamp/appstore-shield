@@ -1,0 +1,16 @@
+{
+  "name": "appstore-shield",
+  "owner": {
+    "name": "wonkylamp"
+  },
+  "metadata": {
+    "description": "Marketplace for the appstore-shield Claude Code plugin."
+  },
+  "plugins": [
+    {
+      "name": "appstore-shield",
+      "source": "./",
+      "description": "Local, zero-network App Review compliance checks: scans, review-history ledger, review notes, replies and appeals. Not affiliated with or endorsed by Apple."
+    }
+  ]
+}

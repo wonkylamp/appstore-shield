@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # zod is bundled into the committed dist/, so a dependency fix also needs `npm run build` and a dist/ commit.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

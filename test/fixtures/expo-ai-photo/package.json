@@ -1,0 +1,28 @@
+{
+  "name": "glowup-ai",
+  "version": "1.4.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo run:ios",
+    "update": "eas update --branch production"
+  },
+  "dependencies": {
+    "@react-native-firebase/app": "^21.6.0",
+    "@react-native-firebase/remote-config": "^21.6.0",
+    "@supabase/supabase-js": "^2.45.4",
+    "expo": "~52.0.11",
+    "expo-image-picker": "~16.0.3",
+    "expo-updates": "~0.26.9",
+    "react": "18.3.1",
+    "react-native": "0.76.3",
+    "react-native-purchases": "^8.2.5",
+    "react-native-purchases-ui": "^8.2.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~18.3.12",
+    "typescript": "^5.3.3"
+  }
+}

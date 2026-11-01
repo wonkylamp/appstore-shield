@@ -1,6 +1,6 @@
 {
   "name": "appstore-shield",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Local, zero-network App Review compliance checks for iOS, SwiftUI and React Native/Expo apps: finds hidden or remotely switchable features, unsafe generative AI, missing UGC safeguards and paywall gaps; keeps an account-scoped review history; drafts and lints review notes, replies and appeals; and holds submit-for-review commands while a rejection is unresolved. Compliance and disclosure, never evasion; no guarantees. Independent tool; not affiliated with or endorsed by Apple. App Store is a trademark of Apple Inc.",
   "author": {
     "name": "wonkylamp"

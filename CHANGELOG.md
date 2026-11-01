@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [0.1.2] - 2026-11-01
+
+### Fixed
+
+- The Hugging Face endpoint, Core ML model and `.gguf` file patterns no longer slow down on Node 20 for long runs of one character (103 ms to under 1 ms on 100 KB).
+
 ## [0.1.1] - 2026-11-01
 
 ### Fixed

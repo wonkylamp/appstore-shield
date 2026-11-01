@@ -132,7 +132,7 @@ This is v0.1, so here is what it has been checked against and where it is still 
   with:
     node-version: 22
 - name: App Review gate
-  run: npx --yes github:wonkylamp/appstore-shield#v0.1.1 gate .
+  run: npx --yes github:wonkylamp/appstore-shield#v0.1.2 gate .
 ```
 
 **fastlane**
@@ -140,7 +140,7 @@ This is v0.1, so here is what it has been checked against and where it is still 
 ```ruby
 # fastlane/Fastfile
 before_all do
-  sh("npx", "--yes", "github:wonkylamp/appstore-shield#v0.1.1", "gate", File.expand_path(".."))
+  sh("npx", "--yes", "github:wonkylamp/appstore-shield#v0.1.2", "gate", File.expand_path(".."))
 end
 ```
 

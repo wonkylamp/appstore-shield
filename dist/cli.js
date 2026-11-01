@@ -3,7 +3,7 @@ import { createRequire as __shieldCreateRequire } from "node:module";
 const require = __shieldCreateRequire(import.meta.url);
 import {
   VERSION
-} from "./chunks/chunk-YDFPBOSP.js";
+} from "./chunks/chunk-CF3T6K2O.js";
 import {
   MAX_HOOK_COMMAND,
   agentEnvironment,
@@ -598,7 +598,7 @@ async function cmdLint(a) {
   if (!text.trim()) throw new UsageError(`${file === "-" ? "stdin" : file} is empty; there is nothing to lint.`);
   const rejection = a.flags.get("rejection");
   const factIds = list(a.flags.get("fact-ids"));
-  const { createServer } = await import("./chunks/server-6RN7TH4P.js");
+  const { createServer } = await import("./chunks/server-ZQNHDIG4.js");
   const { Client } = await import("./chunks/client-DEQZFKK6.js");
   const { InMemoryTransport } = await import("./chunks/inMemory-NNUC73BG.js");
   const [clientSide, serverSide] = InMemoryTransport.createLinkedPair();
@@ -913,7 +913,7 @@ ${HELP.main}
     const a = parseArgs(cmd, rest);
     switch (cmd) {
       case "mcp": {
-        const { startStdioServer } = await import("./chunks/server-6RN7TH4P.js");
+        const { startStdioServer } = await import("./chunks/server-ZQNHDIG4.js");
         await startStdioServer();
         return -1;
       }

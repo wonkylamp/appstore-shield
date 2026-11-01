@@ -113,7 +113,7 @@ Run `appstore-shield <command> --help` for every option.
 
 ## Use it as a gate
 
-`appstore-shield gate` reads the repo and the ledger, records nothing, and exits 1 on HOLD. It prints the verdict, then `HOLD:`, `WARN:` and `NOTE:` lines (notes say which apps were scanned); `--json` prints `verdict`, `holdReasons`, `warnings` and `coverage`. Pin the version in CI so a new release never changes a verdict unannounced (`npx --yes github:wonkylamp/appstore-shield#v0.1.1 gate .`), or add it as a dev dependency (`npm install -D github:wonkylamp/appstore-shield#v0.1.1`).
+`appstore-shield gate` reads the repo and the ledger, records nothing, and exits 1 on HOLD. It prints the verdict, then `HOLD:`, `WARN:` and `NOTE:` lines (notes say which apps were scanned); `--json` prints `verdict`, `holdReasons`, `warnings` and `coverage`. Pin the version in CI so a new release never changes a verdict unannounced (`npx --yes github:wonkylamp/appstore-shield#v0.1.2 gate .`), or add it as a dev dependency (`npm install -D github:wonkylamp/appstore-shield#v0.1.2`).
 
 ### fastlane
 
@@ -123,7 +123,7 @@ Run the gate before any lane that submits for review:
 # fastlane/Fastfile
 before_all do
   # fastlane runs from ./fastlane; the gate checks the app repo one level up.
-  sh("npx", "--yes", "github:wonkylamp/appstore-shield#v0.1.1", "gate", "--project", File.expand_path(".."))
+  sh("npx", "--yes", "github:wonkylamp/appstore-shield#v0.1.2", "gate", "--project", File.expand_path(".."))
 end
 ```
 
@@ -131,7 +131,7 @@ If you only want it on release lanes, put the same `sh(...)` call at the top of 
 
 ### EAS (Expo)
 
-`eas submit` uploads a build; it does not submit for review. Run the gate where you decide to submit. For example, add it as a dev dependency (`npm install -D github:wonkylamp/appstore-shield#v0.1.1`) and a script, and run it before you press "Submit for Review" or call your submission tooling:
+`eas submit` uploads a build; it does not submit for review. Run the gate where you decide to submit. For example, add it as a dev dependency (`npm install -D github:wonkylamp/appstore-shield#v0.1.2`) and a script, and run it before you press "Submit for Review" or call your submission tooling:
 
 ```json
 {
@@ -150,7 +150,7 @@ You can also run it in an EAS build hook (`"eas-build-pre-install": "appstore-sh
   with:
     node-version: 22
 - name: App Review gate
-  run: npx --yes github:wonkylamp/appstore-shield#v0.1.1 gate --project .
+  run: npx --yes github:wonkylamp/appstore-shield#v0.1.2 gate --project .
 ```
 
 The step fails on HOLD. Warnings are printed and do not fail the build. For ledger-based conditions (open rejections, drift), set `ledgerPath` in `.appstore-shield/config.json` to a path where CI checks out your **private** compliance repository.

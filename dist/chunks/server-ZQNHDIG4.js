@@ -46,7 +46,7 @@ import {
 } from "./chunk-R7TSWG37.js";
 import {
   VERSION
-} from "./chunk-YDFPBOSP.js";
+} from "./chunk-CF3T6K2O.js";
 import {
   commitImport,
   importAppleData,

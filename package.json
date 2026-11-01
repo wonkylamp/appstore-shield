@@ -1,6 +1,6 @@
 {
   "name": "appstore-shield",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Local, offline App Review compliance helper for iOS, SwiftUI and React Native/Expo apps: a CLI, MCP server and Claude Code plugin that scans for hidden or remotely switchable features and AI/UGC safety gaps, gates submit-for-review, and keeps an honest review record. Findings are leads, not proof; no guarantee of approval or against account termination. Not affiliated with or endorsed by Apple.",
   "keywords": [
     "app-store",

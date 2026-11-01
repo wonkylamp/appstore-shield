@@ -306,7 +306,8 @@ describe("redactSecrets on untrusted repo text", () => {
       "AWS secret wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
       "aws_secret_access_key wJalrXUtnFEMI+K7MDENG+bPxRfiCYEXAMPLEKEY",
       '"key": "lowercasehexsecret0123456789abcdef0123456789"',
-.join("_"),
+      // Split so secret scanners don't flag the fake token.
+      ["hf", "abcdefghijklmnopqrstuvwxyzABCDEFGH"].join("_"),
       "fal key: 12345678-1234-1234-1234-123456789abc:0123456789abcdef0123456789abcdef",
     ]) {
       const out = redactSecrets(leak);
